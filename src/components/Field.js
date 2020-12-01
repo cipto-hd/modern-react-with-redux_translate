@@ -1,8 +1,8 @@
 import { useContext } from "react";
-import LanguageContext from "../contexts/LanguageContext";
+import Context from "../contexts/ContextStore";
 
 const Field = () => {
-  const language = useContext(LanguageContext);
+  const { language } = useContext(Context);
 
   const labelText = language === "english" ? "Name" : "Naam";
 
